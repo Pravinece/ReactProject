@@ -1,9 +1,12 @@
 // signin.js
 import React, { useState } from 'react';
 import LandingPage from './landingPage';
-import { useHistory } from 'react-router-dom';
-const SignInComponent = ({ onRegisterClick}) => {
+import { useNavigate } from 'react-router-dom';
+import a from '../images/apl.png'
+import b from '../images/gle.png'
 
+const SignInComponent = ({ onRegisterClick}) => {
+  const navigate = useNavigate(); 
   
   const [emailValue, setEmailValue] = useState({
     email: "",
@@ -12,7 +15,7 @@ const SignInComponent = ({ onRegisterClick}) => {
     password: "",
     showPassword: false,
   });
-
+  
   const Register = () => {
     onRegisterClick();
   };
@@ -43,7 +46,7 @@ const SignInComponent = ({ onRegisterClick}) => {
       });
       if (isDataFound) {
         console.log('Data found in JSON data.');
-        
+        navigate('/home')
         // Data found, you can proceed with your logic here
       } else {
         console.log('Data not found in JSON data.');
@@ -91,8 +94,8 @@ const SignInComponent = ({ onRegisterClick}) => {
             </div>
             <div style={{ justifyContent: 'center', alignItems: 'center', alignContent: 'center', padding: '10% 10% 40% 30%' }}>
               <p> or continue with</p>
-              <a href='#'><img src='./image/apl.png' className='logo' alt="apl logo" /></a>
-              <a href='#'><img src='./image/gle.png' className='logo' alt="gle logo" /></a>
+              <a href='#'><img src= {a} className='logo' alt="apl logo"/></a>
+              <a href='#'><img src={b} className='logo' alt="gle logo" /></a>
             </div>
           </form>
         </div>

@@ -1,4 +1,6 @@
 import React from 'react';
+import a from '../images/apl.png'
+import b from '../images/gle.png'
 
 const SignUpComponent=({onLoginClick})=>{
     const login=()=>{
@@ -84,8 +86,8 @@ const SignUpComponent=({onLoginClick})=>{
           </div>
           <div style={{justifyContent:'center',alignItems:'center',alignContent:'center',padding:'10% 10% 40% 30%'}}>
             <p> or continue with</p>
-            <a href='#'><img src='./image/apl.png' className='logo'></img></a>
-            <a href='#'><img src='./image/gle.png' className='logo'></img></a>
+            <a href='#'><img src={a} className='logo'></img></a>
+            <a href='#'><img src={b} className='logo'></img></a>
           </div>
           </div>
           </form>
