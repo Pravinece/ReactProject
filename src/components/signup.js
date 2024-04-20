@@ -1,8 +1,6 @@
 import React from 'react';
 
 const SignUpComponent=({onLoginClick})=>{
-    // const containerClasses = 'min-h-screen flex items-center justify-center bg-zinc-100 dark:bg-zinc-800 px-4 sm:px-6 lg:px-8';
-    // const innerContainerClasses = 'max-w-md w-full space-y-8';
     const login=()=>{
       onLoginClick();
     }
@@ -47,10 +45,6 @@ const SignUpComponent=({onLoginClick})=>{
 
     return (
     
-        // <div className={containerClasses}>
-        //   <div className={innerContainerClasses}>
-
-        //   <div class="bg-white dark:bg-zinc-700 shadow sm:rounded-lg py-8 px-4 sm:px-10">
         <div className='row'>
         <div className='left' style={{width:'300px',padding:'60px 140px'}}>
           <h2 >Sign in to</h2>
@@ -65,7 +59,7 @@ const SignUpComponent=({onLoginClick})=>{
         <div className='left' style={{width:'300px',marginLeft:'20%'}}>
         <h2>Sign up</h2>
         <form  action="#" method="POST" onSubmit={handleSubmit}>
-        <input type="hidden" name="remember" value="true" />
+        {/* <input type="hidden" name="remember" value="true" /> */}
         <div >
           <div >
            
@@ -79,10 +73,10 @@ const SignUpComponent=({onLoginClick})=>{
             />
 
             <div style={{paddingBottom:'30px',paddingTop:'30px'}}>
-              <input className='input_box'  name="password" type="password" autoComplete="current-password" required  placeholder="Enter Password" />
+              <input className='input_box'  name="password" type="password"  required  placeholder="Enter Password" />
             </div>
             <div style={{paddingBottom:'0px'}}>
-              <input className='input_box'  name="password" type="password" autoComplete="current-password" required  placeholder="Re-Enter Password" />
+              <input className='input_box'  name="password" type="password"  required  placeholder="Re-Enter Password" />
             </div>
             <button type="submit" style={{marginTop:'40px',width:'300px',height:'40px',color:'white',borderColor:'blue',backgroundColor:'blue',borderRadius:'10px'}}>
               Sign In
