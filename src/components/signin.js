@@ -21,7 +21,7 @@ const SignInComponent = ({ onRegisterClick}) => {
   };
 
   const handleSubmit = async (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault();
   
     // Get form data
     const formData = new FormData(event.target);
