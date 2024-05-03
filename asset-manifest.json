@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/ReactProject/static/css/main.e3804c0e.css",
-    "main.js": "/ReactProject/static/js/main.6b72f7f5.js",
+    "main.css": "/ReactProject/static/css/main.b1700917.css",
+    "main.js": "/ReactProject/static/js/main.1156955b.js",
     "static/js/453.43591557.chunk.js": "/ReactProject/static/js/453.43591557.chunk.js",
-    "static/media/image1.jpg": "/ReactProject/static/media/image1.f6e1189008ac8c2bc658.jpg",
+    "static/media/fa-solid-900.ttf": "/ReactProject/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
+    "static/media/fa-brands-400.ttf": "/ReactProject/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
+    "static/media/fa-solid-900.woff2": "/ReactProject/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
+    "static/media/fa-brands-400.woff2": "/ReactProject/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
+    "static/media/image3.jpg": "/ReactProject/static/media/image3.9f16048f9dc8e701dfad.jpg",
+    "static/media/fa-regular-400.ttf": "/ReactProject/static/media/fa-regular-400.eb91f7b948a42799f678.ttf",
+    "static/media/fa-regular-400.woff2": "/ReactProject/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
+    "static/media/fa-v4compatibility.ttf": "/ReactProject/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
+    "static/media/fa-v4compatibility.woff2": "/ReactProject/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/ReactProject/index.html",
-    "main.e3804c0e.css.map": "/ReactProject/static/css/main.e3804c0e.css.map",
-    "main.6b72f7f5.js.map": "/ReactProject/static/js/main.6b72f7f5.js.map",
+    "main.b1700917.css.map": "/ReactProject/static/css/main.b1700917.css.map",
+    "main.1156955b.js.map": "/ReactProject/static/js/main.1156955b.js.map",
     "453.43591557.chunk.js.map": "/ReactProject/static/js/453.43591557.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3804c0e.css",
-    "static/js/main.6b72f7f5.js"
+    "static/css/main.b1700917.css",
+    "static/js/main.1156955b.js"
   ]
 }
