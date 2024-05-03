@@ -2,7 +2,7 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import React, { useState } from 'react';
 import i3 from '../turfimg/image3.jpg';
 import Headers from './header';
-export default function ProductCard({ place}) {
+export default function ProductCard({ place, incrementSlot }) {
     const turf = {
         koyambedu: [
             { name: "VRTurf", location: "3rd street", ratings: 3.5, prize: 600,images:'i3'},
@@ -40,12 +40,7 @@ export default function ProductCard({ place}) {
             { name: "BMclumTurf", location: "1rd street", ratings: 4.8, prize: 600,images:'./image/image7.jpeg' }
         ]
     };
-    const [slotCount, setSlotCount] = useState(0);
-    const incrementSlot=()=>{
-
-            setSlotCount(slotCount + 1);
-            <Headers no={slotCount}/>
-        };
+    
 
     const handleturf = (prop) => {
         const turfs = turf[prop];

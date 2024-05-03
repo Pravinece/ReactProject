@@ -4,7 +4,7 @@ import LandingPage from './landingPage';
 import { useNavigate } from 'react-router-dom';
 import a from '../images/apl.png'
 import b from '../images/gle.png'
-
+import { Eye } from 'lucide-react';
 const SignInComponent = ({ onRegisterClick}) => {
   const navigate = useNavigate(); 
   
@@ -56,7 +56,10 @@ const SignInComponent = ({ onRegisterClick}) => {
       console.error('Error:', error.message);
     }
   };
-
+ const [show,setShow]=useState(false);
+ const toggle=()=>{
+  setShow(!show)
+ }
   return (
     <div>
       <div className='row'>
@@ -78,11 +81,12 @@ const SignInComponent = ({ onRegisterClick}) => {
               <div style={{ paddingBottom: '50px' }}>
                 <input id="email-address" name="email" type="email"  required className='input_box' placeholder="Enter email or user name" />
               </div>
-              <div style={{ paddingBottom: '10px' }}>
-                <div>
-                  <input name="password" type="password"  className='input_box' required placeholder="Password" />
-                </div>
+              {/* <div style={{ paddingBottom: '10px' }}> */}
+                <div className="input-with-eye">
+              <input name="password"  className='input_box' type={show?"text":"password"} required placeholder="Password" />
+               <div className="eye" onClick={toggle}><Eye/></div>
               </div>
+              {/* </div> */}
               <div>
                 <a href='#' style={{ float: 'right' }}>Forgot Password</a>
               </div>

@@ -4,9 +4,11 @@ import './header.css'
 import ProductCard from './productcard';
 
 
-export default function Headers({slotCount}){
-  
-
+export default function Headers(){
+  const [slotCount, setSlotCount] = useState(0);
+  const incrementSlot=()=>{
+          setSlotCount(prev=>prev + 1);
+      };
     return(
         <header>   
             <>
@@ -19,7 +21,7 @@ export default function Headers({slotCount}){
                 <a className="active"href="#home">Home</a>
               </div>
               {/* <div className="topnav-right">
-              <a href="#">Slot{slotCount}</a>
+              <a>{slotCount}</a>
               </div> */}
               </div>
               </>

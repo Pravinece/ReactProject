@@ -1,0 +1,18 @@
+    /* -----------------------eye----------------------------- */
+    .input-with-eye {
+        position: relative;
+      }
+      
+      .input-box {
+        padding-right: 30px;
+      }
+      
+      .eye-icon {
+        position: absolute;
+        top: 50%;
+        right: 5px; /* Adjust the value to control the distance from the input field */
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+      
+      
