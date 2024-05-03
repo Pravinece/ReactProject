@@ -46,7 +46,7 @@ const SignInComponent = ({ onRegisterClick}) => {
       });
       if (isDataFound) {
         console.log('Data found in JSON data.');
-        navigate('/home')
+        navigate('/landing')
         // Data found, you can proceed with your logic here
       } else {
         console.log('Data not found in JSON data.');
